@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import SingleExpense from './SingleExpense/SingleExpense';
 import Modal from '../UI/Modal/Modal';
 import BackDrop from '../UI/BackDrop/BackDrop';
-import  { Redirect } from 'react-router-dom';
+import  { Navigate } from 'react-router-dom';
 import { validateBillCost, validateBillNumber } from '../../store/validators/validators';
 
 class AddExpense extends Component {
@@ -168,7 +168,7 @@ class AddExpense extends Component {
             modalView = {display: "flex"};
         }
         if(!this.props.auth || this.props.role!=="USER"){
-            return <Redirect to='/signup' />;
+            return <Navigate to='/signup' />;
         }
         return (
             <div className={classes.Expense}>

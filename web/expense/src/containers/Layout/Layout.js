@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import LandingPage from '../../components/LandingPage/LandingPage';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Login from '../Login/Login';
 import Signup from '../Signup/Signup';
 import User from '../../components/User/User';
@@ -43,11 +43,11 @@ class Layout extends Component {
         }
         return (
             <div>
-                <Switch>
+                <Routes>
                     <Route path="/add-expense" render={() => newMain} />
                     <Route path="/signup" component={Signup} />
                     <Route path="/" render={() => newMain} />
-                </Switch>
+                </Routes>
                 <ToastContainer />
             </div>
         );

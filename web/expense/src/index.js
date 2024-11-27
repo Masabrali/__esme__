@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import { createStore, applyMiddleware, compose ,combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
+import * as thunk from 'redux-thunk';
 import userReducer from './store/reducers/user';
 import voucherReducer from './store/reducers/voucher';
 import adminReducer from './store/reducers/admin';

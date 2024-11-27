@@ -1,17 +1,17 @@
 import React from 'react';
 import UserDashboard from './DashBoard/DashBoard';
 import UserHeader from './Header/Header';
-import {Switch, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import AddExpense from '../../containers/Expense/Expense';
 
 const User = () => {
     return (
         <div>
             <UserHeader />
-            <Switch>
+            <Routes>
                 <Route path="/add-expense" component={AddExpense} />
                 <Route path="/" component={UserDashboard} />
-            </Switch>
+            </Routes>
         </div>
     );
 }

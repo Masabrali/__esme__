@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes';
 import axios from 'axios';
-import { toast } from '../../../node_modules/react-toastify';
+import { toast } from 'react-toastify';
 
 const addVoucherSuccess = (id, voucherData) => {
     return {
