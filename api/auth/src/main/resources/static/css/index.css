@@ -1,0 +1,44 @@
+/** Body Container */
+.body-container {
+    min-height: 736px;
+}
+
+/** Content container */
+.content-container {
+    max-width: 640px;
+}
+
+/** Logo */
+
+/** Content Container */
+
+/** Logo Container */
+
+/** Form Container */
+
+/** Form */
+/** Calling code */
+div#calling_code_wrapper {
+    width: 96px;
+}
+
+select#calling_code {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/*** Phone */
+input#phone {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+/** Form Button Container */
+.form-container .form .btn-container {
+    margin-top: 32px !important;
+}
+
+/** Button */
+.btn {
+    text-transform: uppercase;
+}

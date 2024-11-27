@@ -1,0 +1,22 @@
+# spring.application.name=calender
+# server.port=8094
+# spring.config.import = configserver:http://localhost:8091
+server:
+  port: 8094
+spring:
+  application:
+    name: calender
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: 123
+    url: jdbc:postgresql://localhost:5432/esme_calender
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8093 # Authorization Server issuer URI

@@ -1,0 +1,38 @@
+.SingleExpense {
+    width: 21%;
+    background-color: white;
+    margin: 20px 6%;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    height: 230px;
+    cursor: pointer;
+}
+.SingleExpense img {
+    height: 40%;
+    width: 40%;
+    margin: 20px 0px 0px 0px;
+}
+.SingleExpense p {
+    margin: 0;
+}
+.SingleExpense i {
+    position: relative;
+    left: 40%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .SingleExpense {
+        width: 40%;
+        background-color: white;
+        margin: 20px 6%;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        height: 230px;
+    }
+}

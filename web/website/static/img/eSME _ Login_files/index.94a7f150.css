@@ -1,0 +1,30 @@
+.body-container {
+  min-height: 736px;
+}
+
+.content-container {
+  max-width: 640px;
+}
+
+div#calling_code_wrapper {
+  width: 96px;
+}
+
+select#calling_code {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+input#phone {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.form-container .form .btn-container {
+  margin-top: 32px !important;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=index.94a7f150.css.map */

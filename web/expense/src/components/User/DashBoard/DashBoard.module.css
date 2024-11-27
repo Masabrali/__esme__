@@ -1,0 +1,102 @@
+.DashBoard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #ECEFF1;
+    height: 100vh;
+    padding: 50px;
+}
+
+.monthHeader {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.detailsCard {
+    background-color: white;
+    width: 25%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.detailsCard:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detailsCard {
+        width: 80%;
+    }
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .detailsCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .detailsCard p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .detailsCard p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .detailsCard p:last-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e90ff;
+  }
+  
+  .detailsCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    .detailsCard {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .detailsCard {
+      width: 100%;
+    }
+  }
+  
+

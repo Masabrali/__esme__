@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block header_nav %}
+    <a href="{{ auth_url }}" class="d-block btn btn-primary rounded-5 me-4 px-3 text-capitalize fw-medium">{{ lang('goToApp') }}</a>
+    <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="{{ static_url }}/img/flag-{{ lang_key }}.png" class="rounded-5" width="28" height="32" />
+        </button>
+        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="sw">
+                <img src="{{ static_url }}/img/flag-sw.png" class="rounded-5" width="24" height="24" />
+                <span>&nbsp;{{ lang('swahili') }}</span>
+            </a>
+            <a class="dropdown-item" href="en">
+                <img src="{{ static_url }}/img/flag-en.png" class="rounded-5" width="24" height="24" />
+                <span>&nbsp;{{ lang('english') }}</span>
+            </a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron flex-fill h-100">
+        <div class="container cover flex-fill h-100">
+            <div class="container content-container d-flex flex-column justify-content-center align-items-center h-100">
+                <div class="content-wrapper d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="fw-medium text-white shadow">{{ lang('growWithEveryPassingMoment') }}</h1>
+                    <p class="fs-6 text-white shadow">{{ lang('setYourGoalsHighAndLetESMEHelpYouReachThem') }}</p>
+                    <div>
+                        <a href="{{ auth_url }}" class="btn btn-primary rounded-5 me-4 px-4 text-transform-none download-footer-btn text-capitalize fw-medium">{{ lang('goToApp') }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
